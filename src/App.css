@@ -1,0 +1,48 @@
+.App {
+  background-color: #008080;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.MyComputer {
+  position: fixed;
+  top: 5px;
+  left: 0;
+}
+
+.RecycleBin {
+  position: fixed;
+  top: 75px;
+  left: 0;
+}
+
+.YotseeDesktop {
+  position: fixed;
+  top: 145px;
+  left: 0;
+}
+
+.Start {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.SystemTray {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.Bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 28px;
+  width: 100%;
+  z-index: 0;
+}

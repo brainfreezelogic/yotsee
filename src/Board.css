@@ -1,0 +1,321 @@
+.Board {
+    width: 627px;
+    height: 447px;
+    background: #C0C0C0;
+    border-width: 2px;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    border-style: solid;
+    padding: 1px;
+    font-size: 11px;
+    font-family: "MS Sans Serif";
+    align-self: center;
+    image-rendering: pixelated;
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;    
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+.Board-Header {
+    width: 619px;
+    height: 16px;
+    background-color: #010081;
+    margin: 2px;
+    padding: 4px 0 0px 4px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.Board-Header-Icon {
+    height: 12px;
+    vertical-align: text-bottom;
+    padding-right: 3px;
+}
+
+.Board-Menu {
+    height: 22px;
+    border-bottom: solid 1px #808080;
+}
+
+.Board-Menu-Divider {
+    border-bottom: solid 1px #ffffff;
+}
+
+.Board-Main-Top-Row {
+    display: flex;
+    padding: 6px 7px;
+}
+
+.Board-Roll-Button {
+    width: 70px;
+    height: 14px;
+    padding: 8px 0;
+    text-align: center;
+    position: relative;
+}
+
+.Board-Roll-Button-Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    image-rendering: pixelated;
+}
+
+.Board-Roll-Button-Text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.Board-Roll-Button-Down {
+    background-image: url(./images/buttondown.png);
+}
+
+.Board-Roll-Button-Up {
+    background-image: url(./images/buttonup.png);
+}
+
+.Board-Score-Header {
+    display: flex;
+    margin-left: 17px;
+}
+
+.Board-Score-Header-Rolls {
+    margin-left: -5px;
+    margin-right: 5px;
+    display: flex;
+    width: 137px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14.5px;
+}
+
+.Board-Score-Header-Rolls > div {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.Board-Score-Header-Player {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #696969 #E3E3E3 #E3E3E3 #696969;
+}
+
+.Board-Score-Header-Player.Player-0 { margin-left: 0; }
+.Board-Score-Header-Player.Player-1 { margin-left: 32px; }
+.Board-Score-Header-Player.Player-2 { margin-left: 64px; }
+.Board-Score-Header-Player.Player-3 { margin-left: 96px; }
+.Board-Score-Header-Player.Player-4 { margin-left: 128px; }
+.Board-Score-Header-Player.Player-5 { margin-left: 160px; }
+
+.Board-Score-Header-Player > div {
+    display: flex;
+    width: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A0A0A0 #ffffff #ffffff #A0A0A0;
+}
+
+.Board-Main-Bottom-Row {
+    display: flex;
+    width: 625px;
+    height: 358px;
+}
+
+.Board-Dice-Tray {
+    margin: 0 7px;
+    width: 70px;
+}
+
+.Board-Die {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.Board-Die-Unlocked {
+    background-image: url(./images/unlocked.png);
+}
+
+.Board-Die-Locked {
+    background-image: url(./images/locked.png);
+}
+
+.Board-Die-Image {
+    padding: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.Board-Score-Card {
+    padding: 0 10px;
+    position: relative;
+}
+
+.Board-Score-Card table {
+    border-spacing: 1px;
+    background-color: #A0A0A0;
+}
+
+.Board-Score-Card td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #696969 #E3E3E3 #E3E3E3 #696969;
+}
+
+.Board-Score-Card-Bottom-Line {
+    width: 100%;
+    border-top: solid #ffffff 1px;
+    margin: -1px 0 4px 0;
+    position: relative;
+}
+
+.Board-Score-Card > div:nth-child(odd) {
+    display: flex;
+}
+
+.Board-Score-Card-Right-Line {
+    border-left: solid #ffffff 1px;
+    margin: 0 0 1px -1px;
+}
+
+.Board-Score-Card-Top > tbody > tr:nth-child(7) > td,
+.Board-Score-Card-Top > tbody > tr:nth-child(8) > td:nth-child(1) > div:nth-child(1),
+.Board-Score-Card-Top > tbody > tr:nth-child(9) > td,
+.Board-Score-Card-Middle > tbody > tr:nth-child(8) > td,
+.Board-Score-Card-Middle > tbody > tr:nth-child(9) > td,
+.Board-Score-Card-Bottom > tbody > tr:nth-child(1) > td {
+    font-weight: bold;
+}
+
+.Board-Score-Card-Top > tbody > tr:nth-child(7) > td:nth-child(1) > div:nth-child(1),
+.Board-Score-Card-Top > tbody > tr:nth-child(9) > td:nth-child(1) > div:nth-child(1),
+.Board-Score-Card-Middle > tbody > tr:nth-child(8) > td:nth-child(1) > div:nth-child(1),
+.Board-Score-Card-Middle > tbody > tr:nth-child(9) > td:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+    background: url(./images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 3px;
+}
+
+.Board-Score-Card-Bottom {
+    font-size: 14px;
+}
+
+.Board-Score-Card-Bottom > tbody > tr > td {
+    height: 14px;
+}
+
+.Board-Score-Card-Bottom > tbody > tr > td > div:nth-child(1) {
+    margin-left: 5px;
+    margin-top: -1px;
+}
+
+.Board-Score-Card-Top > tbody > tr:nth-child(odd),
+.Board-Score-Card-Middle > tbody > tr:nth-child(even),
+.Board-Score-Card-Bottom > tbody > tr {
+    background-color: #ffffff;
+}
+
+.Board-Score-Card-Top > tbody > tr:nth-child(even),
+.Board-Score-Card-Middle > tbody > tr:nth-child(odd) {
+    background-color: #C0C0FF;
+}
+
+.Board-Score-Card > div > table > tbody > tr:not(.Board-Score-Card-Label-Yotsee) > td:first-child,
+.Board-Score-Card-Label-Yotsee > td:first-child > div {
+    display: flex;
+    justify-content: space-between;
+    width: 131px;
+}
+
+.Board-Score-Card td,
+.Board-Score-Card-Label-Yotsee > td > div {
+    margin: 0;
+    height: 12px;
+}
+
+.Board-Score-Card div table:not(.Board-Score-Card-Bottom) tr:not(.Board-Score-Card-Label-Yotsee) td:first-child div:nth-child(1),
+.Board-Score-Card-Label-Yotsee > td > div div:nth-child(1) {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.Board-Score-Card > div > table > tbody > tr:not(.Board-Score-Card-Label-Yotsee) > td:first-child div:nth-child(2),
+.Board-Score-Card-Label-Yotsee > td > div div:nth-child(2) {
+    font-size: 7px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Board-Score-Card > div > table > tbody > tr:not(:nth-child(8)):not(.Board-Score-Card-Label-Yotsee) > td:first-child div:nth-child(2) {
+    width: 46px;
+}
+
+.Board-Score-Card-Top > tbody > tr:nth-child(8) > td:nth-child(1) > div:nth-child(2) {
+    width: 66px;
+}
+
+.Board-Score-Card-Label-Yotsee > td > div {
+    height: 13px;
+}
+
+.Board-Score-Card-Label-Yotsee > td > div:nth-child(1) > div:nth-child(2) {
+    width: 46px;
+    padding: 0 10px;
+}
+
+.Board-Score-Card-Label-Yotsee > td > div:nth-child(2) > div:nth-child(2) {
+    width: 46px;
+    padding-top: 4px;
+}
+
+.Board-Score-Card-Middle > tbody > tr:nth-child(3) > td:nth-child(1) > div:nth-child(2),
+.Board-Score-Card-Middle > tbody > tr:nth-child(4) > td:nth-child(1) > div:nth-child(2),
+.Board-Score-Card-Middle > tbody > tr:nth-child(5) > td:nth-child(1) > div:nth-child(2) {
+    padding: 0 7px;
+}
+
+.Board-Score-Card > div > table > tbody > tr > td:not(:first-child) {
+    width: 27px;
+    text-align: center;
+}
+
+.Board-Score-Card-Label-Yotsee > td:not(:first-child) > div:nth-child(2) {
+    border-top: 1px solid #000000;
+    margin: 1px -1px 0 -2px;
+    padding: 0 1px 0 2px;
+    height: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Player-0 { background-color: #FFC0C0; }
+.Player-1 { background-color: #C0FFC0; }
+.Player-2 { background-color: #FFE0C0; }
+.Player-3 { background-color: #FFC0FF; }
+.Player-4 { background-color: #FFFFC0; }
+.Player-5 { background-color: #C0FFFF; }
+
+.Score-Selector {
+    color: #ff0000;
+}
